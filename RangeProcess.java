@@ -13,14 +13,19 @@ public interface RangeProcess{
 	//2.1 像素的区间定义
 	//首先，我需要一个图片，然后从图片中读取标准的三原色，和它的总数和区间定义规范。
 	public int setRGBAndRangeThenReturnAmountOfThisRanges(int[][][]rgb, int rangeMin, int rangeMax);
-	public int 设置一个RGB和区间定义然后提取出区间的像素数 (int[][][]rgb, int rangeMin, int rangeMax);
-	public int[] 设置一个RGB和区间定义然后提取出区间的PCA像素数 (int[][][]rgb, int rangeMin, int rangeMax);
-	public int[] 设置一个RGB和区间定义然后提取出区间的ICA像素数 (int[][][]rgb, int rangeMin, int rangeMax);
-	public int[][][] 设置一个RGB和区间定义然后提取出区间的PCA像素 (int[][][]rgb, int rangeMin, int rangeMax);
-	public int[][][][] 设置一个RGB和区间定义然后提取出区间的PCA分类像素 (int[][][]rgb, int rangeMin, int rangeMax);
-	public int[][][] 设置一个RGB和区间定义然后提取出区间的ICA像素 (int[][][]rgb, int rangeMin, int rangeMax, int section);
-	public int[][][][] 设置一个RGB和区间定义然后提取出区间的ICA分类像素 (int[][][]rgb, int rangeMin, int rangeMax, int section);
+	public int 设置一个RGB和区间定义然后提取出区间的像素数(int[][][]rgb, int rangeMin, int rangeMax);
+	public int[] 设置一个RGB和区间定义然后提取出区间的PCA像素数(int[][][]rgb, int rangeMin, int rangeMax);
+	public int[] 设置一个RGB和区间定义然后提取出区间的ICA像素数(int[][][]rgb, int rangeMin, int rangeMax);
+	public int[][][] 设置一个RGB和区间定义然后提取出区间的PCA像素(int[][][]rgb, int rangeMin, int rangeMax);
+	public int[][][][] 设置一个RGB和区间定义然后提取出区间的PCA分类像素(int[][][]rgb, int rangeMin, int rangeMax);
+	public int[][][] 设置一个RGB和区间定义然后提取出区间的ICA像素(int[][][]rgb, int rangeMin, int rangeMax);
+	public int[][][][] 设置一个RGB和区间定义然后提取出区间的ICA分类像素(int[][][]rgb, int rangeMin, int rangeMax);
 	
+	public Map<String, int[][]> 设置一个RGB和区间定义然后提取出区间的ICA像素集(int[][][]rgb, int rangeMin, int rangeMax);
+	public Map<String, int[][]> 设置一个RGB和区间定义然后提取出区间的PCA像素集(int[][][]rgb, int rangeMin, int rangeMax);
+	
+	public Map<String, int[][][]> 设置一个RGB和区间定义然后提取出区间的ICA分类像素集(int[][][]rgb, int rangeMin, int rangeMax);
+	public Map<String, int[][][]> 设置一个RGB和区间定义然后提取出区间的PCA分类像素集(int[][][]rgb, int rangeMin, int rangeMax);
 	//2.2 像素的主要颜色区间
 	//关于像素的主要颜色 我定位在七彩色，红橙黄绿青靛紫 区间定义规范。
 	
