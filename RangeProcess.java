@@ -26,6 +26,11 @@ public interface RangeProcess{
 	
 	public Map<String, int[][][]> 设置一个RGB和区间定义然后提取出区间的ICA分类像素集(int[][][]rgb, int rangeMin, int rangeMax);
 	public Map<String, int[][][]> 设置一个RGB和区间定义然后提取出区间的PCA分类像素集(int[][][]rgb, int rangeMin, int rangeMax);
+	
+	public Map<String, int[][][]> 设置一个RGB和区间进行指定rgb计算定义然后提取出区间的PCA分类像素集(int[][][]rgb, int rangeMin, int rangeMax, int r, int g, int b);
+	public Map<String, int[][][]> 设置一个RGB和区间进行指定rgb计算定义然后提取出区间的ICA分类像素集(int[][][]rgb, int rangeMin, int rangeMax, int r, int g, int b);
+	public Map<String, int[][][]> 设置一个RGB和区间进行指定rgb计算定义然后提取出区间的按section分类像素集(int[][][]rgb, int rangeMin, int rangeMax, int r, int g, int b, int section);
+	
 	//2.2 像素的主要颜色区间
 	//关于像素的主要颜色 我定位在七彩色，红橙黄绿青靛紫 区间定义规范。
 	
