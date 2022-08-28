@@ -28,8 +28,8 @@ public interface ColorProcess{
 	public int readBufferedImageAndReturnAmountOfRedPixGroup(BufferedImage bufferedImage);
 	public int readBufferedImageAndReturnAmountOfGreenPixGroup(BufferedImage bufferedImage);
 	public int readBufferedImageAndReturnAmountOfBluePixGroup(BufferedImage bufferedImage);
-	public int[] readBufferedImageAndReturnAmountsOfRGBPixGroups(BufferedImage bufferedImage);
-	public int[] readPixesAndReturnAmountsOfRGBPixGroups(int[][][] pixes, String arranges);
+	public int[] readBufferedImageAndReturnAmountsOfRGBPixGroup(BufferedImage bufferedImage);
+	public int[] readPixesAndReturnAmountsOfRGBPixGroup(int[][][] pixes, String arranges);
 	
 	//1.2 像素的主要颜色总和
 	//关于像素的主要颜色 我定位在七彩色，红橙黄绿青靛紫。
@@ -42,7 +42,7 @@ public interface ColorProcess{
 	public int[] readBufferedImageAndReturnAmountsOfPCACyanPixGroup(BufferedImage bufferedImage);
 	public int[] readBufferedImageAndReturnAmountsOfPCAPurplePixGroup(BufferedImage bufferedImage);
 	public int[] readBufferedImageAndReturnAmountsOfPCAOrangePixGroup(BufferedImage bufferedImage);
-	public int[] readBufferedImageAndReturnAmountsOfPCAPixGroups(BufferedImage bufferedImage, String arranges);
+	public int[] readBufferedImageAndReturnAmountsOfPCAPixGroup(BufferedImage bufferedImage, String arranges);
 	
 	//1.2 像素的主要颜色总和
 	//关于像素的主要颜色 我定位在七彩色，红橙黄绿青靛紫。
@@ -55,7 +55,7 @@ public interface ColorProcess{
 	public int readPixesAndReturnAmountOfPCACyanPixGroup(int[][][] pixes);
 	public int readPixesAndReturnAmountOfPCAPurplePixGroup(int[][][] pixes);
 	public int readPixesAndReturnAmountOfPCAOrangePixGroup(int[][][] pixes);
-	public int[] readPixesAndReturnAmountsOfPCAPixGroups(int[][][] pixes, String arranges);
+	public int[] readPixesAndReturnAmountsOfPCAPixGroup(int[][][] pixes, String arranges);
 	
 	//1.3 像素的特殊颜色总和
 	//关于像素的主要颜色 我定位在21颜色阶， 浅红深， 浅橙深， 浅黄深， 浅绿深， 浅青深， 浅靛深， 浅紫深
@@ -69,7 +69,7 @@ public interface ColorProcess{
 	public int[] readBufferedImageAndReturnAmountsOfICACyanPixGroup(BufferedImage bufferedImage, String arranges, int sections);
 	public int[] readBufferedImageAndReturnAmountsOfICAPurplePixGroup(BufferedImage bufferedImage, String arranges, int sections);
 	public int[] readBufferedImageAndReturnAmountsOfICAOrangePixGroup(BufferedImage bufferedImage, String arranges, int sections);
-	public int[] readBufferedImageAndReturnAmountsOfICAPixGroups(BufferedImage bufferedImage, String arranges, int sections);
+	public int[] readBufferedImageAndReturnAmountsOfICAPixGroup(BufferedImage bufferedImage, String arranges, int sections);
 	
 	public int[] readPixesAndReturnAmountsOfICARedPixGroup(int[][][] pixes, String arranges, int sections);
 	public int[] readPixesAndReturnAmountsOfICAGreenPixGroup(int[][][] pixes, String arranges, int sections);
@@ -81,7 +81,7 @@ public interface ColorProcess{
 	public int[] readPixesAndReturnAmountsOfICACyanPixGroup(int[][][] pixes, String arranges, int sections);
 	public int[] readPixesAndReturnAmountsOfICAPurplePixGroup(int[][][] pixes, String arranges, int sections);
 	public int[] readPixesAndReturnAmountsOfICAOrangePixGroup(int[][][] pixes, String arranges, int sections);
-	public int[] readPixesAndReturnAmountsOfICAPixGroups(int[][][] pixes, String arranges, int sections);
+	public int[] readPixesAndReturnAmountsOfICAPixGroup(int[][][] pixes, String arranges, int sections);
 	
 	//1.4 像素的特征颜色的统计
 	//关于像素的特征颜色 我定位在输入某一个rgb ，某一个颜色阶段， 某一个区间，输出需求的颜色统计。
