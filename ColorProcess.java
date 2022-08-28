@@ -25,9 +25,9 @@ public interface ColorProcess{
 	//1.1 像素的总和
 	//首先，我需要一个图片，然后从图片中读取标准的三原色，和它的总数。
 	public int readPixesAndReturnAmountOfPixes(int[][] pixes);// >0
-	public int readBufferedImageAndReturnAmountsOfRedPixGroup(BufferedImage bufferedImage);
-	public int readBufferedImageAndReturnAmountsOfGreenPixGroup(BufferedImage bufferedImage);
-	public int readBufferedImageAndReturnAmountsOfBluePixGroup(BufferedImage bufferedImage);
+	public int readBufferedImageAndReturnAmountOfRedPixGroup(BufferedImage bufferedImage);
+	public int readBufferedImageAndReturnAmountOfGreenPixGroup(BufferedImage bufferedImage);
+	public int readBufferedImageAndReturnAmountOfBluePixGroup(BufferedImage bufferedImage);
 	public int[] readBufferedImageAndReturnAmountsOfRGBPixGroups(BufferedImage bufferedImage);
 	public int[] readPixesAndReturnAmountsOfRGBPixGroups(int[][][] pixes, String arranges);
 	
@@ -46,15 +46,15 @@ public interface ColorProcess{
 	
 	//1.2 像素的主要颜色总和
 	//关于像素的主要颜色 我定位在七彩色，红橙黄绿青靛紫。
-	public int readPixesAndReturnAmountsOfPCARedPixGroup(int[][][] pixes);
-	public int readPixesAndReturnAmountsOfPCAGreenPixGroup(int[][][] pixes);
-	public int readPixesAndReturnAmountsOfPCABluePixGroup(int[][][] pixes);
-	public int readPixesAndReturnAmountsOfPCAYellowPixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCARedPixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCAGreenPixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCABluePixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCAYellowPixGroup(int[][][] pixes);
 	//我用了pink 哈哈
-	public int readPixesAndReturnAmountsOfPCAPinkPixGroup(int[][][] pixes);
-	public int readPixesAndReturnAmountsOfPCACyanPixGroup(int[][][] pixes);
-	public int readPixesAndReturnAmountsOfPCAPurplePixGroup(int[][][] pixes);
-	public int readPixesAndReturnAmountsOfPCAOrangePixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCAPinkPixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCACyanPixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCAPurplePixGroup(int[][][] pixes);
+	public int readPixesAndReturnAmountOfPCAOrangePixGroup(int[][][] pixes);
 	public int[] readPixesAndReturnAmountsOfPCAPixGroups(int[][][] pixes, String arranges);
 	
 	//1.3 像素的特殊颜色总和
@@ -86,7 +86,7 @@ public interface ColorProcess{
 	//1.4 像素的特征颜色的统计
 	//关于像素的特征颜色 我定位在输入某一个rgb ，某一个颜色阶段， 某一个区间，输出需求的颜色统计。
 	public int readPixesAndReturnAmountOfPCADeterminatedPixGroup(int[][][] pixes, String arranges, int sections);
-	public int[] readPixesAndReturnAmountOfICADeterminatedPixGroup(int[][][] pixes, String arranges, int sections);
+	public int[] readPixesAndReturnAmountsOfICADeterminatedPixGroup(int[][][] pixes, String arranges, int sections);
 	
 	//arranges如红色，蓝色。。。arranges="RB"   如红色，绿色。。。arranges="RG"
 	//sections分层如 5， 红色区间分5层，8 红色区间分8层. 意味着 255,255,255的三原色        (65535/7) /分层  方便理解。
