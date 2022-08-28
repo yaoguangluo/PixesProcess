@@ -33,7 +33,7 @@
 3.5 像素的分布坐标提取             
 。。             
              
-5，坐标，中心，重心，趋势, 轨迹计算，etc见 作者的 GPL2.0 作品             
+5，坐标，中心，重心，趋势, 卷积 轨迹计算，etc见 作者的 GPL2.0 作品             
 5.1 https://github.com/yaoguangluo/Data_Processor             
 5.2 https://github.com/yaoguangluo/Data_Prediction             
 5.3《DNA元基催化与肽计算 第四修订版 V00919》             
